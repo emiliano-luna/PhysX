@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+F:/WorkPhysXEmLuna/externals/cmakemodules/ConfigureFileMT.cmake
+F:/WorkPhysXEmLuna/externals/cmakemodules/GetCompilerAndPlatform.cmake
+F:/WorkPhysXEmLuna/externals/cmakemodules/NvidiaBuildOptions.cmake
+F:/WorkPhysXEmLuna/externals/cmakemodules/SetOutputPaths.cmake
+F:/WorkPhysXEmLuna/externals/targa/targa-config-version.cmake
+F:/WorkPhysXEmLuna/externals/targa/targa-config.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/CMakeLists.txt
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/SampleBase.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/SampleFramework.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/SamplePlatform.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/SampleRenderer.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/Samples.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/SamplesToolkit.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/CMakeLists.txt
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/SampleBase.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/SampleFramework.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/SamplePlatform.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/SampleRenderer.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/Samples.cmake
+F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/windows/SamplesToolkit.cmake

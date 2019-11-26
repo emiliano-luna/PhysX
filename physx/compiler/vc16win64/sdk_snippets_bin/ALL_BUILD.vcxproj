@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68A5F5D1-D82A-3315-9916-0C2648A57D97}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;F:\WorkPhysXEmLuna\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{263EF82A-759A-35F0-988A-45930B42E676}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetArticulation.vcxproj">
+      <Project>{4561F22B-7883-35E6-9371-5183BAC2A6DF}</Project>
+      <Name>SnippetArticulation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetBVHStructure.vcxproj">
+      <Project>{B65F05EF-3E39-33C1-ADAC-C3ADD8B934D0}</Project>
+      <Name>SnippetBVHStructure</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactModification.vcxproj">
+      <Project>{4A451058-A3B2-3A2E-B5EE-1876F0859182}</Project>
+      <Name>SnippetContactModification</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactReport.vcxproj">
+      <Project>{868F041F-231E-3637-AC36-38BE4D6BEA42}</Project>
+      <Name>SnippetContactReport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetContactReportCCD.vcxproj">
+      <Project>{B40A7E20-EB51-3BA2-B8AA-7BFB43AC88D1}</Project>
+      <Name>SnippetContactReportCCD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetConvert.vcxproj">
+      <Project>{9A35644F-D9E5-3169-A055-1AB9751B8FEC}</Project>
+      <Name>SnippetConvert</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetConvexMeshCreate.vcxproj">
+      <Project>{8A0446DC-F226-322C-ADC7-82CD9471A883}</Project>
+      <Name>SnippetConvexMeshCreate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetCustomJoint.vcxproj">
+      <Project>{699E51BB-12CD-3246-8507-7F1222893DB2}</Project>
+      <Name>SnippetCustomJoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetCustomProfiler.vcxproj">
+      <Project>{B526D7B6-B5D2-30E9-B50F-58CD4AF0F49C}</Project>
+      <Name>SnippetCustomProfiler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetDeformableMesh.vcxproj">
+      <Project>{3BC0AD99-C7F4-3A39-93CD-701E49D44B75}</Project>
+      <Name>SnippetDeformableMesh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetDelayLoadHook.vcxproj">
+      <Project>{651ED67C-ACD8-3C4B-8F1E-C1D849260F6A}</Project>
+      <Name>SnippetDelayLoadHook</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetHelloGRB.vcxproj">
+      <Project>{E8159792-49AE-3E12-A96C-F5FCEA5314AD}</Project>
+      <Name>SnippetHelloGRB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetHelloWorld.vcxproj">
+      <Project>{29B9E5E3-CEEE-3787-8DCD-7F8793942843}</Project>
+      <Name>SnippetHelloWorld</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetImmediateArticulation.vcxproj">
+      <Project>{3D75A6E0-4EBB-30A2-9DDB-167D237898FB}</Project>
+      <Name>SnippetImmediateArticulation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetImmediateMode.vcxproj">
+      <Project>{6E43A309-6FF9-3305-A138-B872A1773F2C}</Project>
+      <Name>SnippetImmediateMode</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetJoint.vcxproj">
+      <Project>{7121965D-6E1E-3EBF-9DC0-D9F893BA404F}</Project>
+      <Name>SnippetJoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetLoadCollection.vcxproj">
+      <Project>{DEC3891F-14B2-3976-876A-C1AF8C6D8AFE}</Project>
+      <Name>SnippetLoadCollection</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetMBP.vcxproj">
+      <Project>{767F7910-E4E6-3196-869A-34DCA2E01743}</Project>
+      <Name>SnippetMBP</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetMultiThreading.vcxproj">
+      <Project>{57546CA9-2B1F-3243-95AA-0C1E959B4141}</Project>
+      <Name>SnippetMultiThreading</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetNestedScene.vcxproj">
+      <Project>{4E157063-251D-30CE-95B7-F7DBD4BD55C2}</Project>
+      <Name>SnippetNestedScene</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetPrunerSerialization.vcxproj">
+      <Project>{66A857EB-E486-3255-BC30-86FE09E7B3AB}</Project>
+      <Name>SnippetPrunerSerialization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetRaycastCCD.vcxproj">
+      <Project>{A79D0904-CA78-3032-90E8-A6AF7B9B0F5D}</Project>
+      <Name>SnippetRaycastCCD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetRender.vcxproj">
+      <Project>{D6199C45-3712-3310-94CA-A8E7934FDD7C}</Project>
+      <Name>SnippetRender</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSerialization.vcxproj">
+      <Project>{7872D0EB-93FA-3B14-9C30-16B193597494}</Project>
+      <Name>SnippetSerialization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSplitFetchResults.vcxproj">
+      <Project>{222AB3EE-E8C6-3926-8B87-C7EDC47F7664}</Project>
+      <Name>SnippetSplitFetchResults</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetSplitSim.vcxproj">
+      <Project>{FB0443FC-B54D-3641-A118-C44C7E43FD8B}</Project>
+      <Name>SnippetSplitSim</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetStepper.vcxproj">
+      <Project>{D13B0EB8-AAC9-39ED-9603-E708F08B419B}</Project>
+      <Name>SnippetStepper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetToleranceScale.vcxproj">
+      <Project>{9A0F5BFD-5AF2-38DD-BB10-DCDAE068541A}</Project>
+      <Name>SnippetToleranceScale</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetTriangleMeshCreate.vcxproj">
+      <Project>{E45D522B-DE0B-3DA6-A5DF-669548929D10}</Project>
+      <Name>SnippetTriangleMeshCreate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetUtils.vcxproj">
+      <Project>{3A94D717-54E6-3C06-86FA-1C9F118541E7}</Project>
+      <Name>SnippetUtils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicle4W.vcxproj">
+      <Project>{2297566B-ED88-35BF-8C6F-9B7939B0F322}</Project>
+      <Name>SnippetVehicle4W</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleContactMod.vcxproj">
+      <Project>{388613A4-E013-3C69-B066-BFC0AE362533}</Project>
+      <Name>SnippetVehicleContactMod</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleMultiThreading.vcxproj">
+      <Project>{77B1C437-CAAF-3041-AF2F-7EB02B30BC75}</Project>
+      <Name>SnippetVehicleMultiThreading</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleNoDrive.vcxproj">
+      <Project>{A9A62681-5689-324A-B29A-E8D366FB3BF9}</Project>
+      <Name>SnippetVehicleNoDrive</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleScale.vcxproj">
+      <Project>{56D20E2F-CB8A-309A-BD79-5EF0B45310BC}</Project>
+      <Name>SnippetVehicleScale</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_snippets_bin\SnippetVehicleTank.vcxproj">
+      <Project>{3436E570-E04C-3F5F-86AD-B39B0E359B02}</Project>
+      <Name>SnippetVehicleTank</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

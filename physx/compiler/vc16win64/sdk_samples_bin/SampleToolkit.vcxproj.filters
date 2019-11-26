@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\src\PxTkBmpLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\src\PxTkFPS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\src\PxTkMatrixUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\src\PxTkRandom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\src\PxTkStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkBmpLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkFPS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkMatrixUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkNamespaceMangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkRandom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxTkStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include\PxToolkit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{46D9B5A8-0971-3DFD-AC44-8C0B7615BA64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56EB4E96-46DE-333D-9545-ED5CCB1D486B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

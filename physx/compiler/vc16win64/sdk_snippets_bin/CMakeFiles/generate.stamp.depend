@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+F:/WorkPhysXEmLuna/externals/cmakemodules/ConfigureFileMT.cmake
+F:/WorkPhysXEmLuna/externals/cmakemodules/GetCompilerAndPlatform.cmake
+F:/WorkPhysXEmLuna/externals/cmakemodules/NvidiaBuildOptions.cmake
+F:/WorkPhysXEmLuna/externals/cmakemodules/SetOutputPaths.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/CMakeLists.txt
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/SnippetRender.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/SnippetTemplate.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/SnippetUtils.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/SnippetVehicleTemplate.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/windows/CMakeLists.txt
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/windows/SnippetRender.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/windows/SnippetTemplate.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/windows/SnippetUtils.cmake
+F:/WorkPhysXEmLuna/physx/snippets/compiler/cmake/windows/SnippetVehicleTemplate.cmake

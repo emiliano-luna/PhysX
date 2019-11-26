@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AF08E0B-3E43-368E-B684-6184A803D902}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>SamplePlatform</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SamplePlatform.dir\debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\checked\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SamplePlatform.dir\checked\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='checked|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SamplePlatform.dir\profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='profile|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">SamplePlatform.dir\release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|x64'">SamplePlatform_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\debug\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="checked";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\checked\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"checked\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\profile\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_SUPPORT_PVD=0;CMAKE_INTDIR="release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>F:\WorkPhysXEmLuna\physx\bin\win.x86_64.vc142.mt\release\SamplePlatform_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_SUPPORT_PVD=0;CMAKE_INTDIR=\"release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\renderer\include;F:\WorkPhysXEmLuna\physx\samples\sampleframework\framework\include;F:\WorkPhysXEmLuna\physx\include;F:\WorkPhysXEmLuna\physx\source\common\src;F:\WorkPhysXEmLuna\physx\samples\pxtoolkit\include;F:\WorkPhysXEmLuna\physx\..\pxshared\include;F:\WorkPhysXEmLuna\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config-version.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config-version.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config-version.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\ConfigureFileMT.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config-version.cmake;F:\WorkPhysXEmLuna\externals\targa\targa-config.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\SamplesToolkit.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleBase.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleFramework.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\Samples.cmake;F:\WorkPhysXEmLuna\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\src\windows\WindowsSamplePlatform.cpp" />
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\src\windows\WindowsSampleUserInput.cpp" />
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include\windows\WindowsSampleUserInputIds.h" />
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include\windows\WindowsSampleUserInput.h" />
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include\windows\WindowsSamplePlatform.h" />
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\src\SamplePlatform.cpp" />
+    <ClCompile Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\src\SampleUserInput.cpp" />
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include\SampleUserInputIds.h" />
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include\SampleUserInput.h" />
+    <ClInclude Include="F:\WorkPhysXEmLuna\physx\samples\sampleframework\platform\include\SamplePlatform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{263EF82A-759A-35F0-988A-45930B42E676}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{49943FD0-5B4A-3956-AA3B-07BBE495A136}</Project>
+      <Name>PhysX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{0ADE9E10-B405-39F0-99E7-5E25F06AC45E}</Project>
+      <Name>PhysXExtensions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{F382E671-B3D6-367F-8231-7F0720D03090}</Project>
+      <Name>PhysXFoundation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{4587724A-0B92-3EAF-8D18-107FB2138B0F}</Project>
+      <Name>PhysXPvdSDK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_samples_bin\SampleToolkit.vcxproj">
+      <Project>{0EA46F7D-D637-30C7-82FF-D57DBE52D616}</Project>
+      <Name>SampleToolkit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

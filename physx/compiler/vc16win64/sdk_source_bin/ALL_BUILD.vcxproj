@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68A5F5D1-D82A-3315-9916-0C2648A57D97}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\WorkPhysXEmLuna\physx\source\compiler\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\template\PxIncludeTemplate.h;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SimulationController.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\template\PxIncludeTemplate.h;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SimulationController.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\template\PxIncludeTemplate.h;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SimulationController.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule F:/WorkPhysXEmLuna/physx/source/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/WorkPhysXEmLuna/physx/compiler/public -BF:/WorkPhysXEmLuna/physx/compiler/vc16win64 --check-stamp-file F:/WorkPhysXEmLuna/physx/compiler/vc16win64/sdk_source_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\externals\cmakemodules\GetCompilerAndPlatform.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\NvidiaBuildOptions.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\SetOutputPaths.cmake;F:\WorkPhysXEmLuna\externals\cmakemodules\template\PxIncludeTemplate.h;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\SimulationController.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\CMakeLists.txt;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\FastXml.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevel.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelAABB.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\LowLevelDynamics.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysX.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCharacterKinematic.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCommon.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXCooking.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXExtensions.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXFoundation.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXPvdSDK.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXTask.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\PhysXVehicle.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SceneQuery.cmake;F:\WorkPhysXEmLuna\physx\source\compiler\cmake\windows\SimulationController.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{263EF82A-759A-35F0-988A-45930B42E676}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\FastXml.vcxproj">
+      <Project>{BAD0B39D-73DF-38ED-A8B0-9B7AD5466428}</Project>
+      <Name>FastXml</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\LowLevel.vcxproj">
+      <Project>{C5C4BC8C-38BD-358D-A3DC-B3C5C377C855}</Project>
+      <Name>LowLevel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\LowLevelAABB.vcxproj">
+      <Project>{22DB972C-D896-3848-A77B-286E829B908C}</Project>
+      <Name>LowLevelAABB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\LowLevelDynamics.vcxproj">
+      <Project>{21E8A5D5-AFEA-3455-BC9F-5042D438DF33}</Project>
+      <Name>LowLevelDynamics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{49943FD0-5B4A-3956-AA3B-07BBE495A136}</Project>
+      <Name>PhysX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXCharacterKinematic.vcxproj">
+      <Project>{54E6CCE0-44E1-3746-BA09-3C683F8851A8}</Project>
+      <Name>PhysXCharacterKinematic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXCommon.vcxproj">
+      <Project>{DD810424-7F09-3132-9A77-35FCBCBAAC56}</Project>
+      <Name>PhysXCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXCooking.vcxproj">
+      <Project>{67AB5E7F-2BA1-38F5-B845-3D2376983E41}</Project>
+      <Name>PhysXCooking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{0ADE9E10-B405-39F0-99E7-5E25F06AC45E}</Project>
+      <Name>PhysXExtensions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{F382E671-B3D6-367F-8231-7F0720D03090}</Project>
+      <Name>PhysXFoundation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{4587724A-0B92-3EAF-8D18-107FB2138B0F}</Project>
+      <Name>PhysXPvdSDK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXTask.vcxproj">
+      <Project>{4A8BDEB0-2C69-322E-89D2-33179ACFFEC2}</Project>
+      <Name>PhysXTask</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\PhysXVehicle.vcxproj">
+      <Project>{497D7FB2-E02C-3F55-9FE0-F2495EF6910E}</Project>
+      <Name>PhysXVehicle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\SceneQuery.vcxproj">
+      <Project>{6D4845B3-881D-30BF-A15C-AB3BBD361215}</Project>
+      <Name>SceneQuery</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\WorkPhysXEmLuna\physx\compiler\vc16win64\sdk_source_bin\SimulationController.vcxproj">
+      <Project>{C2849802-880D-3F55-9C0F-2BE87A37DE8B}</Project>
+      <Name>SimulationController</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

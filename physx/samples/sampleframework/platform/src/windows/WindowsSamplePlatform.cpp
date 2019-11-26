@@ -40,7 +40,7 @@
 
 #if defined(RENDERER_ENABLE_DIRECT3D9)
 	#include <d3d9.h>
-	#include <d3dx9.h>
+	#include <d3dx9>
 	#include <XInput.h>
 #endif
 
